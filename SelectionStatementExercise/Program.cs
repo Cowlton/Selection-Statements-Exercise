@@ -22,7 +22,7 @@
             else
             {
                 Console.WriteLine("It is between 1 and 1000");
-                guess();
+                Guess();
             }
             
         }
@@ -80,7 +80,7 @@
             }
         }
         
-        static void guess()
+        static void Guess()
         {
             int userInput = int.Parse(Console.ReadLine());
             
@@ -91,11 +91,11 @@
             else if (userInput < favNumber)
             {
                 Console.WriteLine("Your guess is too low!");
-                guess();
+                Guess();
             }else
             {
                 Console.WriteLine("Your guess is too high!");
-                guess();
+                Guess();
             }
             
         } 
